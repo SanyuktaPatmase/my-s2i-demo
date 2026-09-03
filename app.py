@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return "Hello! VERSION 2 - This proves BuildConfig and ImageStream work together!"
+    return "Hello! This app was built using S2I (Source-to-Image). No Dockerfile was written!"
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8080)
